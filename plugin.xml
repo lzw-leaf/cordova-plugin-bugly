@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-bugly" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-bugly</name>
+    <description>tencent bugly plugin</description>
+    <author>Eucalyptus</author>
+    <keywords>bugly</keywords>
+    <!-- 定义有效的js模块 -->
+    <js-module name="BuglySdk" src="www/bugly.js">
+        <!-- target是挂载到window上的具体名称 -->
+        <clobbers target="BuglySdk" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BuglySdk">
+                <!-- 定义在构建包的时候，当前包是在哪个目录下的 -->
+                <param name="android-package" value="wxt.cordova.plugins.bugly.BuglyPlugin"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <config-file target="res/values/strings.xml" parent="/resources">
+            <string name="app_update_info">更新说明：</string>
+            <string name="app_update_cancel">下次再说</string>
+        </config-file>
+
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        </config-file>
+
+
+        <source-file src="src/android/java/BuglyPlugin.java" target-dir="wxt/cordova/plugins/bugly" />
+        <source-file src="src/android/res/xml/provider_paths.xml" target-dir="res/xml" />
+        <source-file src="src/android/res/layout/update_dialog.xml" target-dir="res/layout" />
+        <source-file src="src/android/res/drawable/item_select_background.xml" target-dir="res/drawable" />
+        <source-file src="src/android/res/drawable/update_dialog_background.xml" target-dir="res/drawable" />
+
+        <framework src="com.tencent.bugly:crashreport_upgrade:latest.release"/>
+        <framework src="com.tencent.bugly:nativecrashreport:latest.release"/>
+        <framework src="com.android.support.constraint:constraint-layout:1.0.2"/>
+    </platform>
+</plugin>
