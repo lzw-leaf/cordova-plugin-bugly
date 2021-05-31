@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-bugly",
+  "version": "1.0.0",
+  "description": "A cordova plugin, app upgrade",
+  "cordova": {
+    "id": "cordova-plugin-bugly",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cordova",
+    "bugly",
+    "upgrade",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "eucalyptus",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
