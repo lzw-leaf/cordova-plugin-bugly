@@ -1,6 +1,7 @@
 {
   "name": "@lzw-leaf/cordova-plugin-bugly",
-  "version": "1.0.1",
+  "types": "./types/index.d.ts",
+  "version": "1.0.2",
   "description": "A cordova plugin of base on tecent bugly",
   "cordova": {
     "id": "@lzw-leaf/cordova-plugin-bugly",
@@ -22,9 +23,5 @@
   "bugs": {
     "url": "https://github.com/lzw-leaf/cordova-plugin-bugly/issues"
   },
-  "homepage": "https://github.com/lzw-leaf/cordova-plugin-bugly",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "homepage": "https://github.com/lzw-leaf/cordova-plugin-bugly"
 }
