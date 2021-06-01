@@ -1,6 +1,6 @@
 {
   "name": "@lzw-leaf/cordova-plugin-bugly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cordova plugin of base on tecent bugly",
   "cordova": {
     "id": "@lzw-leaf/cordova-plugin-bugly",
