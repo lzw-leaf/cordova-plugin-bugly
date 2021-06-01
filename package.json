@@ -1,28 +1,30 @@
 {
-  "name": "cordova-plugin-bugly",
+  "name": "@lzw-leaf/cordova-plugin-bugly",
   "version": "1.0.0",
-  "description": "A cordova plugin, app upgrade",
+  "description": "A cordova plugin of base on tecent bugly",
   "cordova": {
-    "id": "cordova-plugin-bugly",
+    "id": "@lzw-leaf/cordova-plugin-bugly",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/lzw-leaf/cordova-plugin-bugly.git"
   },
   "keywords": [
     "cordova",
     "bugly",
-    "upgrade",
-    "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "eucalyptus",
+  "author": "lzw-leaf",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/lzw-leaf/cordova-plugin-bugly/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/lzw-leaf/cordova-plugin-bugly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
