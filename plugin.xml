@@ -16,7 +16,7 @@
         <config-file target="config.xml" parent="/*">
             <feature name="BuglySdk">
                 <!-- 定义在构建包的时候，当前包是在哪个目录下的 -->
-                <param name="android-package" value="wxt.cordova.plugins.bugly.BuglyPlugin"/>
+                <param name="android-package" value="ep.cordova.plugins.bugly.BuglyPlugin"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
@@ -33,7 +33,7 @@
         </config-file>
 
 
-        <source-file src="src/android/java/BuglyPlugin.java" target-dir="wxt/cordova/plugins/bugly" />
+        <source-file src="src/android/java/BuglyPlugin.java" target-dir="ep/cordova/plugins/bugly" />
         <source-file src="src/android/res/xml/provider_paths.xml" target-dir="res/xml" />
         <source-file src="src/android/res/layout/update_dialog.xml" target-dir="res/layout" />
         <source-file src="src/android/res/drawable/item_select_background.xml" target-dir="res/drawable" />
