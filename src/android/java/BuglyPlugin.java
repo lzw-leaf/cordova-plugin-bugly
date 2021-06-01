@@ -14,7 +14,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package wxt.cordova.plugins.bugly;
+package ep.cordova.plugins.bugly;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
